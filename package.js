@@ -13,8 +13,9 @@ Package.describe({
   documentation: 'README.md'
 });
 
-Package.onUse(function(api) {
+Package.onUse(function (api) {
   api.versionsFrom('1.0.4');
+  api.versionsFrom('2.4');
   api.use('underscore');
   api.use('accounts-base');
   api.use('tracker');
@@ -27,7 +28,7 @@ Package.onUse(function(api) {
   api.export('LoginState');
 });
 
-Package.onTest(function(api) {
+Package.onTest(function (api) {
   api.versionsFrom('1.0.4');
   api.use('tinytest');
   api.use('brettle:accounts-login-state@0.0.1');
